@@ -4,7 +4,15 @@
 
 <div id="container">
 	<main>
-		<h2> Steffen Witvliet - Persoonlijke website </h2>
+        <h2> Steffen Witvliet - Persoonlijke website </h2>
+
+        <ul id="navbar"> 
+            <li> <a href="/"> Home </a> </li>
+            <li> <a href="/about">  Over mij </a> </li>
+            <li> <a href="/werk"> Werk ervaring </a> </li>
+            <li> <a href="/sport"> Sportief leven </a> </li>
+            <li> <a href="/ideas"> Toekomst ideeen </a> </li>
+        </ul>
 	</main>
 </div>
 <style> 
@@ -21,5 +29,29 @@
 		margin-left: 10px;
 		border-left: 5px solid lime;
 	}
-	
+
+    ul#navbar {
+        display: block;
+        background-color: #000;
+    }
+
+    ul#navbar li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 5px;
+        padding-left: 10px;
+        margin-right: 20px;
+        font-size: 1.5em;
+        color: #fff;
+        border-left: 4px solid orange;
+    }
+
+    ul#navbar li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    ul#navbar li a:active,ul#navbar li a:hover  {
+        text-decoration: underline;
+    }
 </style>
