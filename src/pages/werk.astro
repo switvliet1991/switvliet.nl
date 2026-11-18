@@ -6,8 +6,111 @@ import Layout from '../layouts/Layout.astro';
 <Layout>
 	<Header />
     <div id="content">
+		<h1> Vaardigheden </h1>
+		<div class="content-block">
+            <div class="content-item">
+                <h2> Programmeren </h2>
+                <ul>
+					<li> Ruby on Rails </li>
+					<li> Astro JS</li>
+					<li> HTML </li>
+					<li> CSS </li>
+					<li> SQL </li>
+				</ul>
+            </div>
+		</div> 
+
+		<div class="content-block">
+			<div class="content-item">
+                <h2> Creatieve Vaardigheden </h2>
+                <ul>
+					<li> Creatief denken </li>
+					<li> Schetsen </li>
+					<li> Grafisch ontwerpen (met diverse programma's) </li>
+				</ul>
+            </div> 
+		</div>
+
+		<div class="content-block">
+			<div class="content-item">
+                <h2> Algemene Vaardigheden </h2>
+                <ul>
+					<li> Communiceren </li>
+					<li> Leiding geven </li>
+					<li> Samenwerken </li>
+				</ul>
+            </div> 
+        </div>
+
+		<h1> Studies </h1>
+		<div class="content-block-2">
+            <div class="content-item">
+                <ul>
+					<li> 2026 - 2027 | HBO module | Lifecoach Psychologie | Civas | Online studeren </li>
+					<li> 2012 - 2017 | HBO | Communicatie, Media en ICT | Hanzehogeschool Groningen </li>
+					<li> 2008 - 2011 | HBO | Communicatie, Multimedia & Design | HAN, Arnhem </li>
+				</ul>
+            </div>
+		</div>
+
 		<h1> Werk ervaring </h1>
 
+		<div class="content-block-2"> 
+			<div class="content-item">
+				<ul>
+					<li> Jan 2026 - Sept 2026 | Daka Beuningen | Teamleider 
+					</li>
+					<li> Maart 2025 - Dec 2026 | Action Goor | Temaleider </li>
+					<li> Juni 2022 - feb 2025 | Scapino Berkel en Rodenrijs | Teamleider </li>
+					<li> </li>
+				</ul>
+			</div>
+        </div>
+
+		<div class="content-block">
+            <div class="content-item">
+                <h2> ICT & Media </h2>
+                <p class="article">
+                    Vanaf 2016 tot 2020 heb ik als softwareontwikkelaar gewerkt.
+					In het begin voor Roqua, ene klein ict bedrijf binnen het UMCG Ziekenhuis in Groningen.
+				</p>
+				<p class="article">
+					Later voor Rovecom Hoogeveen, waarbij ik met name werkte aan projecten in de agrarische sector en de voorloper van netflix voor Flixbus heb helpen ontwikkelen.
+				</p>
+				<p class="article">
+					Later nog voor OGD Delft gewerkt aan verschillende kleine interne projecten voor het intranet. 
+                </p>
+            </div> 
+        </div>
+
+		<div class="content-block">
+            <div class="content-item">
+                <h2> Retail en Logistiek </h2>
+                <p class="article">
+                   Vanaf 2020 tot 2026 heb ik gewerkt in de retail en logistieke sector.
+				</p>
+				<p class="article">
+				   Als eerste voor een caravan bedrijf in Pijnacker. Hierbij werkte ik deels als magazijn en inpak medewerker, later als marketing en klantenservice medewerker.
+				</p>
+				<p class="article">
+				   Daarna kwam corona in het land. Toen ben ik overgestapt naar DPD Berkel en Rodenrijs. ruim 2.5 jaar gewerkt als chef beschadigde pakketten. Ik was verantwoordelijk voor het verwerken van alle beschadigde pakjes. inclusief het vastleggen van bewijslasten voor de verzekeringen.
+				</p>
+				<p class="article">
+				   Toen kwam scapino op mijn pad. Ook in Berkel en Rodenrijs. 
+				   Hier werkte ik ook bijna 3 jaar als teamleider, waarbij ik leiding gaf aan ongeveer 8 medewerkers.
+				</p>
+				<p class="article">
+				   Mijn relatie ging uit en ik wilde weer terug naar Gelderland. Eerst een jaar anti kraak gewoond. In die periode werkte ik als teamleider bij de Action in Goor. 
+				</p>
+				<p class="article">  
+				   Eindelijk er kwam een leuk huisje vrij op entree. Ik greep mijn kans en vertrok naar Lent. Mooi nieuwbouw appartement op het hoekje van de 8e verdieping met uitzicht over de waal.
+				</p>
+				<p class="article">
+				   Ik stapte over als teamleider naar Daka Sportwinkel in Beuningen. Echter stopte dat doordat ik ziek werd.
+                </p>
+
+            </div> 
+        </div>
 	</div>
 </Layout>
 
@@ -17,5 +120,32 @@ import Layout from '../layouts/Layout.astro';
 		position: relative;
 		margin: 0px auto;
 	}
+
+    div.content-block {
+        display: inline-flex;
+        width: 500px;
+        position: relative;
+    }
+
+    p.article {
+        width: 450px;
+        font-size: 1.2em;
+    }
+
+	li {
+		font-size: 1.2em;
+	}
+
+	div.content-block-2 {
+        display: flex;
+        width: 900px;
+        position: relative;
+    }
+
+	div.content-block-2 .content-item {
+		flex: 2;
+	}
+
+	
 
 </style>
